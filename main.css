@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(255, 153, 0);
+  padding: 16px;
+}
+
+.cabecalho {
+  margin: 0 auto;
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .titulo {
+  font-family: "Franklin Gothic Medium";
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+.menu a:hover {
+  color: rgb(217, 217, 217);
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.nome-secoes {
+  font-style: italic;
+  border-bottom: 3px solid rgb(255, 153, 0);
+  margin-bottom: 32px;
+  color: rgb(255, 153, 0);
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 36px 0 36px;
+}
+
+.sobre-texto h2 {
+  margin-bottom: 12px;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 24.25%);
+  column-gap: 1%;
+}
+
+.produtos img {
+  width: 100%;
+}
+
+.produtos p {
+  height: 70px;
+}
+
+.produtos article {
+  display: block;
+}
+
+.produtos article button {
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 153, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0 62px 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.produtos article button:hover {
+  background-color: rgb(250, 178, 69);
+}
+
+/*------CELULAR------*/
+
+@media screen and (max-width: 640px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cabecalho {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .menu {
+    text-decoration: none;
+    display: block;
+  }
+
+  .nome-secoes {
+    margin: 24px 0;
+  }
+
+  .sobre {
+    display: block;
+  }
+
+  .sobre p {
+    margin-bottom: 36px;
+  }
+
+  .sobre img {
+    width: 100%;
+    margin: 16px auto;
+  }
+
+  .produtos {
+    display: block;
+  }
+
+  .produtos p {
+    height: auto;
+  }
+
+  .produtos img {
+    width: 100%;
+  }
+
+  .produtos h3 {
+    font-size: 1.5em;
+    margin: 8px 0;
+  }
+
+  .produtos article button {
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 153, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 62px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+/*------TABLET------*/
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .cabecalho {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .menu {
+    text-decoration: none;
+    display: flex;
+  }
+
+  .menu li {
+    margin: 5px;
+  }
+
+  .nome-secoes {
+    margin: 24px 0;
+  }
+
+  .sobre {
+    display: block;
+  }
+
+  .sobre p {
+    margin-bottom: 36px;
+  }
+
+  .sobre img {
+    width: 100%;
+    margin: 16px auto;
+  }
+
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+  }
+
+  .produtos img {
+    width: 100%;
+  }
+
+  .produtos h3 {
+    font-size: 1.5em;
+    margin: 8px 0;
+  }
+
+  .produtos article button {
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 153, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 62px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+  }
+}
